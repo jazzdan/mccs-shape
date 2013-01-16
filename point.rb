@@ -27,4 +27,8 @@ class Point
       raise ArgumentError, "y must be a positive number"
     end
   end
+
+  def to_s
+    '(' + @x.to_s + ',' + @y.to_s + ')'
+  end
 end
