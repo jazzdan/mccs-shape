@@ -13,8 +13,9 @@ describe Point do
   end
 
   it 'should raise an exception if you try to set x to a negative number' do
+    point = Point.new
     expect {
-      point = Point.new(-12, 3)
+      point.setXAndY(-12, 3)
     }.to raise_error(ArgumentError, "x must be a positive number")
   end
 

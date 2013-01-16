@@ -16,6 +16,11 @@ class Point
     @y
   end
 
+  def setXAndY(x,y)
+    setX(x)
+    setY(y)
+  end
+
   private
   def setX(x)
     if x >= 0
