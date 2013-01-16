@@ -1,13 +1,11 @@
-require 'ostruct'
+require './point.rb'
 
 class Shape
-
   def initialize(x=0, y=0)
-    @x = x
-    @y = y
+    @currentPosition = Point.new(x, y)
   end
 
   def currentPosition
-    OpenStruct.new({:x => @x, :y => @y})
+    @currentPosition
   end
 end
