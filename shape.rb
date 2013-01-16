@@ -3,8 +3,8 @@ require 'ostruct'
 class Shape
 
   def initialize(x=0, y=0)
-    @x = 0
-    @y = 0
+    @x = x
+    @y = y
   end
 
   def currentPosition
