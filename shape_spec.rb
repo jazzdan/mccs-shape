@@ -3,7 +3,7 @@ require './shape.rb'
 require 'ostruct'
 
 describe Shape do
-  it "has a position on an x,y plane" do
+  it 'has a position on an x,y plane' do
     shape = Shape.new
     shape2 = Shape.new(1, 2)
     location = OpenStruct.new({ :x => 0, :y => 0 })
