@@ -6,4 +6,9 @@ describe Point do
     point = Point.new
     point.getX.should eq(0)
   end
+
+  it 'has a y coordinate' do
+    point = Point.new
+    point.getY.should eq(0)
+  end
 end

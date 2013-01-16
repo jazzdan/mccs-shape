@@ -7,4 +7,8 @@ class Point
   def getX
     @x
   end
+
+  def getY
+    @y
+  end
 end
