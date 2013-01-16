@@ -2,7 +2,7 @@ require 'ostruct'
 
 class Shape
 
-  def initialize
+  def initialize(x=0, y=0)
     @x = 0
     @y = 0
   end
