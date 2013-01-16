@@ -1,5 +1,5 @@
 require 'rspec'
-require './point.rb'
+require '../lib/point.rb'
 
 describe Point do
   it 'has an x coordinate' do

@@ -1,4 +1,4 @@
-require './shape.rb'
+require './lib/shape.rb'
 
 shape = Shape.new
 puts shape.currentPosition.object_id

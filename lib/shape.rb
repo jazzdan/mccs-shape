@@ -1,4 +1,4 @@
-require './point.rb'
+require '../lib/point.rb'
 
 class Shape
   def initialize(x=0, y=0)

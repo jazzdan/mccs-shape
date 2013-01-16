@@ -1,5 +1,5 @@
 require 'rspec'
-require './shape.rb'
+require '../lib/shape.rb'
 require 'ostruct'
 
 describe Shape do
