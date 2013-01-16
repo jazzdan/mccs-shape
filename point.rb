@@ -4,6 +4,10 @@ class Point
     setY(y)
   end
 
+  def to_s
+    '(' + @x.to_s + ',' + @y.to_s + ')'
+  end
+
   def getX
     @x
   end
@@ -12,6 +16,7 @@ class Point
     @y
   end
 
+  private
   def setX(x)
     if x >= 0
       @x = x
@@ -26,9 +31,5 @@ class Point
     else
       raise ArgumentError, "y must be a positive number"
     end
-  end
-
-  def to_s
-    '(' + @x.to_s + ',' + @y.to_s + ')'
   end
 end

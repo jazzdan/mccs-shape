@@ -12,22 +12,9 @@ describe Point do
     point.getY.should eq(0)
   end
 
-  it 'should be able to set x' do
-    point = Point.new
-    point.setX(7)
-    point.getX.should eq(7)
-  end
-
-  it 'should be able set y' do
-    point = Point.new
-    point.setY(9)
-    point.getY.should eq(9)
-  end
-
   it 'should raise an exception if you try to set x to a negative number' do
-    point = Point.new
     expect {
-      point.setX(-1).should
+      point = Point.new(-12, 3)
     }.to raise_error(ArgumentError, "x must be a positive number")
   end
 
