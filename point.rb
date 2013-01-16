@@ -1,7 +1,7 @@
 class Point
   def initialize(x=0, y=0)
-    @x = x
-    @y = y
+    setX(x)
+    setY(y)
   end
 
   def getX
@@ -13,10 +13,18 @@ class Point
   end
 
   def setX(x)
-    @x = x
+    if x >= 0
+      @x = x
+    else
+      raise ArgumentError, "x must be a positive number"
+    end
   end
 
   def setY(y)
-    @y = y
+    if y >= 0
+      @y = y
+    else
+      raise ArgumentError, "y must be a positive number"
+    end
   end
 end

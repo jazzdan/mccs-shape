@@ -24,4 +24,17 @@ describe Point do
     point.getY.should eq(9)
   end
 
+  it 'should raise an exception if you try to set x to a negative number' do
+    point = Point.new
+    expect {
+      point.setX(-1).should
+    }.to raise_error(ArgumentError, "x must be a positive number")
+  end
+
+  it 'should raise an exception if you try to set y to a negative number' do
+    expect {
+      point = Point.new(5, -2)
+    }.to raise_error(ArgumentError, "y must be a positive number")
+  end
+
 end
